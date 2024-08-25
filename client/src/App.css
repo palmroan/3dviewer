@@ -1,0 +1,21 @@
+/* Ensures the body and html take the full height */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Prevents scrolling */
+}
+
+/* Ensures the root div or the container takes full height */
+#root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Ensures the canvas takes full available space without overflowing */
+canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
